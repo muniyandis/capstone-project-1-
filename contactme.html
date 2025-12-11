@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>My Resume</title>
+    <meta name="description" content="muniyandi's online resume">
+    <meta name="keywords" content="muniyandi, online, resume, portfolio, website">
+    <meta name="author" content="Muniyandi">
+    <link rel="favicon" type="image/x-icon" href="./munigo-digital-favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>MUNIYANDI.S</h1>
+        <nav aria-label="Main Navigation">
+            <a href="./index.html">Home</a>
+            <a href="./contactme.html">Contact Me</a>
+        </nav>
+        <h2>Quick</h2>
+        <nav aria-label="quick section">
+            <ul>
+                <li><a href="./index.html#welcome">Welccome</a></li>
+                <li><a href="./index.html#History">Work History</a>
+                    <ol>
+                        <li><a href="./index.html#work01">Lab Assistant</a></li>
+                        <li><a href="./index.html#work02">Lab Assistant</a></li>
+                        <li><a href="./index.html#work03">Lab Technician</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <hr/>
+    <main>
+        <table border="2">
+            <caption>Available</caption>
+                <thead>
+                    <tr>
+                        <th id="space" scope="col">&nbsp;</th>
+                        <th id="time"scope="col">Time</th>
+                        <th id="hours"scope="col">Working Hours</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="monday"scope="row">Monday</th>
+                            <td headers="monday time"><time datetime="08:00">08 am</time>
+                                -<time datetime=08:00>08 pm</time>
+                            </td>
+                            <td headers="monday hours"><time datetime="PT12H">12 hrs</time></td>
+                        </tr>
+                        <tr>
+                            <th id="tue"scope="row">Tuesday</th>
+                            <td headers="tue time"><time datetime="08:00">08 am</time>
+                                -<time datetime=08:00>08 pm</time>
+                            </td>
+                            <td headers="tue hours"><time datetime="PT12H">12 hrs</time></td>
+                        </tr>
+                        <tr>
+                            <th id="wed"scope="row">Wednesday</th>
+                            <td headers="wed time"><time datetime="08:00">08 am</time>
+                                -<time datetime=08:00>08 pm</time>
+                            </td>
+                            <td headers="wed hours"><time datetime="PT12H">12 hrs</time></td>
+                        </tr>
+                        <tr>
+                           <th id="thur"scope="row">Thursday</th>
+                            <td headers="thur time"><time datetime="08:00">08 am</time>
+                                -<time datetime=08:00>08 pm</time>
+                            </td>
+                            <td headers="thur hours"><time datetime="PT12H">12 hrs</time></td>
+                        </tr>
+                        <tr>
+                            <th id="fri"scope="row">Friday</th>
+                            <td headers="fri time"><time datetime="08:00">08 am</time>
+                                -<time datetime=08:00>08 pm</time>
+                            </td>
+                            <td headers="fri hours"><time datetime="PT12H">12 hrs</time></td>
+                        </tr>
+                        <tr>
+                           <th id="sat"scope="row">Saturday</th>
+                            <td headers="sat time"><time datetime="08:00">08 am</time>
+                                -<time datetime=08:00>08 pm</time>
+                            </td>
+                            <td headers="sat hours"><time datetime="PT12H">12 hrs</time></td>
+                        </tr>
+                        <tr>
+                            <th>Sunday</th>
+                            <td colspan="2">Closed</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <td colspan="3">thanks</td>
+                    </tfoot>
+        </table>
+        <hr>
+        <h3>Contact Form</h3>
+        <form action="https://httpbin.org/get",method="get">
+              <fieldset>
+                <legend>Personal information</legend>
+                <label for="Fname">Given Name</label>
+                <input type="text" name="Fname" id="Fname" required autocomplete="on" placeholder="enter your given name">
+                <br>
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" required autocomplete="on" placeholder="last name">
+                <br>
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" required placeholder="enter your password" required minlength="8">
+                <br>
+                <button type="submit" formaction="https://httpbin.org/post", formmethod="post">submit</button>
+                <button type="reset">Reset</button>
+
+              </fieldset>
+              <fieldset>
+                <legend>Contact Details</legend>
+                <label for="phone">Phone Number</label>
+                <input type="tel" name="phone" id="phone" required pattern="^\+91[6-9][0-9]{9}$" autocomplete="tel" placeholder="+916878984818">
+                <br>
+                <label for="email">email</label>
+                <input type="email" name="email" id="email" autocomplete="on" placeholder="example@gmail.com">
+                <br>
+                <label for="age">Age (min 18 and max 45)</label>
+                <input type="number" name="age" id="age" min="18" max="45" step="1" value="25">
+                <br>
+                <button type="submit">submit</button>
+                <button type="reset">Reset</button>
+              </fieldset>
+              <fieldset>
+                <legend>Yours Need</legend>
+                <label for="need">need</label>
+                <select name="need" id="need">
+                    <option value="">select</option>
+                    <optgroup label="digital marketing">
+                        <option value="seo">SEO</option>
+                        <option value="website">website</option>
+                    </optgroup>
+                    <optgroup label="paid ads">
+                        <option value="google ads">google ads</option>
+                        <option value="meta ads">Meta ads</option>
+                    </optgroup>
+                </select>
+              </fieldset>
+              <fieldset>
+                <legend>Tools</legend>
+                <label for="tools">Tools</label>
+                <select name="tools" id="tools" multiple size="2">
+                    <option value="google">Google</option>
+                    <option value="meta">Meta</option>
+                    <option value="blogger">Blogger</option>
+                </select>
+              </fieldset>
+              <fieldset>
+                <legend>Choose your country</legend>
+                <label for="countries">Choose Your Country</label>
+                <input list="country" id="countries" name="countries" placeholder="choose or type">
+                <datalist id="country">
+                    <option value="india">india</option>
+                    <option value="usa">usa</option>
+                    <option value="muruga">muruga</option>
+                </datalist>
+              </fieldset>
+              <fieldset>
+                <legend>your choice</legend>
+                <label>paid ads</label>
+                <input type="radio" id="google" name="platform" value="google" checked>
+                <label for="google">google</label>
+                <input type="radio"id="meta" name="platform" value="meta">
+                <label for="meta">meta</label>
+              </fieldset>
+              <fieldset>
+                <legend>your choice</legend>
+                <label>paid ads</label>
+                <input type="checkbox" id="seo" name="service" value="seo" checked>
+                <label for="seo">seo</label>
+                <input type="checkbox"id="web" name="service" value="web" >
+                <label for="web">meta</label>
+              </fieldset>
+              <button type="submit">submit</button>
+              <fieldset>
+                <legend>text me</legend>
+                <label for="msg">msg</label>
+                <textarea name="msg" id="msg"  placeholder="write your message"></textarea>
+                <br>
+                 <button type="submit" formaction="https://httpbin.org/post", formmethod="post">submit</button>
+                <button type="reset">Reset</button>
+
+              </fieldset>
+        </form>
+
+    </main>
+    <footer>
+        <h3 id="social media links">Follow Me</h3>
+        <nav aria-labelledby="social media links">
+            <ul>
+                <li><a href="https://www.youtube.com/@MuniCodes">Youtube</a></li>
+            </ul>
+        </nav>
+        <P><a href="#">Bact to Top</a></P>
+    </footer>
+</body>
+</html>
